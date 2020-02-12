@@ -1,0 +1,255 @@
+body{
+  position: relative;
+  background: #FFFFFF;
+}
+ul{
+    list-style: none;
+  }
+ a:hover{
+    text-decoration: none;
+  }
+  .info-box {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 175%;
+    color: #828282;
+    overflow: hidden;
+  }
+  .info-box ul>li>a{
+    color: #828282;
+  }
+   .info-box ul>li{
+    float: left;
+    margin-right: 15px;
+  }
+  .hr-underline{
+    display: inline-block;
+  line-height: 0.9;
+  border-bottom: 1px solid;
+  }
+  .info-box img{
+    margin-right: 8px;
+  }
+  .social-media ul>li{
+    float: left;
+    padding-left: 15px;
+  }
+  .main-logo{
+    position: absolute;
+    left: 30%;
+  }
+ .main-logo #rectangle, h1{
+  display: inline-block;
+ }
+.main-logo #rectangle{
+width: 40px;
+height: 40px;
+background: #2F4450;
+}
+.main-logo h1{
+  font-family: Yaldevi Colombo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2F4450;
+}
+.navbar{
+  padding: .5rem 0;
+}
+.navbar .navbar-nav>li{
+  margin-left: 30px;
+}
+.navbar .navbar-nav>li>a{
+  font-family: "Segoe UI";
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 88%;
+letter-spacing: 0.01em;
+color: #2A2B2C;
+}
+.navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:active{
+  color: #F8921B;
+}
+.appointment-num{
+  margin-top: 20px;
+}
+.appointment-num span{
+  font-size: 14px;
+  padding-right: 5px;
+}
+.appointment-num div{
+  margin: 0;
+  font-family:"Segoe U"I;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 174.19%;
+text-align: center;
+color: #34C270;
+
+}
+.appointment-num b{
+  font-family:"Segoe UI";
+font-size: 15px;
+line-height: 24px;
+text-align: center;
+color: #F8921B;
+}
+.dashed-line{
+  position: absolute;
+  width: 130px;
+  height: 0px;
+  top: 38px;
+  left: 30px;
+  border-top: 2px dashed #F8921B;
+}
+#line{
+  width: 850px;
+  height: 0px;
+  border: 1px solid #F2F2F2;
+  margin-left: 2.5rem;
+  margin-top: .3rem;
+}
+
+/* Order Now Section */
+#order-part .order-table{
+  position: static;
+  width: 100%;
+  left: 0px;
+  top: 124px;
+  z-index: -2;
+  overflow: hidden;
+  }
+  #order-part .order-table img{
+    object-fit: cover;
+    width: 100%;
+  }
+  
+#order-part .img-circle img:first-child{
+  position: absolute;
+  left: 735px;
+  top: -30px;
+  width: 40%;
+  z-index: -1;
+  margin-right: 175px;
+}
+#order-part .img-circle img:nth-child(2){
+  position: absolute;
+  left: 790px;
+  top: 25px;
+  z-index: -2;
+}
+#order-part .img-circle img:last-child{
+  position: absolute;
+    left: 770px;
+    top: 135px;
+}
+#order-part .vis-circ{
+  position: absolute;
+  width: 245px;
+  height: 245px;
+  left: 960px;
+  top: 130px;
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+#order-part .txt-table{
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  left: 300px;
+  top: 160px;
+}
+#order-part .txt-table h2{
+  font-family: 'Montserrat Alternates',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: #34C270;
+}
+#order-part h1{
+  font-family: 'Montserrat Alternates',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: 0.035em;
+  color: #F8921B;
+}
+#line-vertical{
+  border-left: 1px solid#34C270;
+  height: 200px;
+}
+
+@media screen and (min-width: 992px){
+  .circles{
+    width: 125px;
+    height: 125px;
+    background: #FFFFFF;
+    border: 2px solid #34C270;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+}
+
+
+
+
+
+
+.imp{
+
+}
+.imp img{
+  padding-left: 20px;
+}
+.imp-text{
+  padding-left: 15px;
+}
+.imp-text h3{
+  font-family: 'Montserrat Alternates',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  color: #2A2B2C;
+  }
+  .imp-text p{
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #34C270;
+  }
+  .imp-man{
+    padding-top: 25px;
+    margin-top: 25px;
+  }
+  .imp-man img{
+    width: 100%;
+  }
+  .circ-bck-line{
+    background: #F8921B;
+    mix-blend-mode: normal;
+  }
+  .circ-bck-line img{
+    width: 100%;
+  }
+  .ellipse{
+    width:14%;
+  }
+  .circ-service{
+    position: absolute;
+    bottom: 10px;
+    padding-left: 35px;
+  }
