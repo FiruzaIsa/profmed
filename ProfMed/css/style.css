@@ -2,9 +2,6 @@ body{
   position: relative;
   background: #FFFFFF;
 }
-ul{
-    list-style: none;
-  }
  a:hover{
     text-decoration: none;
   }
@@ -58,6 +55,9 @@ background: #2F4450;
 }
 .navbar{
   padding: .5rem 0;
+}
+.navbar .navbar-nav   ul{
+  list-style: none;
 }
 .navbar .navbar-nav>li{
   margin-left: 30px;
@@ -187,20 +187,10 @@ color: #F8921B;
   height: 200px;
 }
 
-@media screen and (min-width: 992px){
-  .circles{
-    width: 125px;
-    height: 125px;
-    background: #FFFFFF;
-    border: 2px solid #34C270;
-    box-sizing: border-box;
-    border-radius: 50%;
-    margin-right: 25px;
-  }
-}
 
 
 
+                                             /* Goblin Section */
 
 
 
@@ -245,11 +235,198 @@ color: #F8921B;
   .circ-bck-line img{
     width: 100%;
   }
-  .ellipse{
-    width:14%;
+  @media screen and (min-width: 992px){
+    .ellipse{
+      width:14%;
+    }
   }
+
+  .circles{
+    width: 125px;
+    height: 125px;
+    background: #FFFFFF;
+    border: 2px solid #34C270;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+
   .circ-service{
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 80px;
     padding-left: 35px;
   }
+
+                                                                      /* Services */
+  #services{
+    /* position: relative;
+    top: 100px; */
+  }
+  .card{
+    /* margin-top: 25px;
+    position: relative;
+    background: #34C270;
+    height: 250px;
+    border-radius: 0%; */
+  }
+  .card img:first-child{
+    mix-blend-mode: multiply;
+    opacity: 1;
+    width: 100%;
+  }
+  .card img:nth-child(2){
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .card .inform{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    margin-right: 50px;
+  }
+  .card .inform h6{
+    font-family: Segoe UI;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+
+
+  /* Other Services */
+  #serv-analysis{
+   margin-top:5rem;
+  }
+  .other-services{
+    border: 2px solid #34C270;
+    box-sizing: border-box;
+  }
+  .other-services .name-sec{
+  
+  }
+   .name-sec h5{
+   font-family: "Segoe UI",sans-serif;
+   font-size: 16px;
+   text-align: center;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+  }
+  .other-services .name-sec h5{
+    color: #34C270;
+    line-height: 24px;
+  }
+  .docs-analys .name-sec h5{
+    line-height: 21px;    
+    color: #FFFFFF;
+  }
+  .other-services ul{
+    margin-bottom: 0;
+  }
+  .other-services ul>li{
+   color: #34C270;
+  }
+  .other-services ul>li:hover{
+    color: #F8921B;
+   }
+  .other-services ul>li>span,.docs-analys ul>li>span{
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .other-services ul>li>span{
+    color: #2F4450;
+    letter-spacing: 0.02em;
+  }
+  .design-below{
+    background: #34C270;
+  }
+  .design-below img{
+    width: 100%;
+    mix-blend-mode: multiply;
+    height: max-content;
+  }
+  .docs-analys ul>li{
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+   .docs-analys ul>li>span:hover{
+    border-bottom: 1.5px dashed #FFFFFF;
+    display: inline-block;
+    line-height: 1.5;
+    cursor: pointer;
+   }
+ 
+   .other-services ul>li>span:hover{
+    cursor: pointer;
+    color: #F8921B !important;
+    border-bottom: 1.5px dashed #F8921B;
+    display: inline-block;
+    line-height: 1.5;
+   }
+   .docs-analys{
+     background: #34C270;
+   }
+
+   /* Consultation section */
+
+   .conslt-image{
+    padding:0 15px;
+   }
+   .conslt-image img{
+     width: 100%;
+  }
+  .pass-img{
+    position: absolute;
+    z-index:-1;
+  }
+  .doc-img{
+    position: absolute;
+    z-index: 1;
+  }
+  /* Benefits */
+
+
+  /* Med Center */
+.med-center{
+  display:inline-block;
+  width: 45%;
+}
+.med-center img{
+  float: left;
+  width: 100%;
+}
+#rect-grn{
+  background: #34C270;
+}
+.about-med-center{
+  display: inline-block;
+}
+.about-med-center h1{
+  font-family: "Montserrat Alternates",sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 34px;
+letter-spacing: 0.01em;
+color: #25353E;
+}
+.about-med-center p{
+  font-family: "Segoe UI",sans-serif;
+font-size: 15px;
+line-height: 25px;
+letter-spacing: 0.02em;
+color: #2A2B2C;
+}
+
+/* Order now */
+.order-now{
+  background-image: url(../images/photos/search-container.jpg);
+}
