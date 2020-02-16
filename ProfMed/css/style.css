@@ -184,21 +184,17 @@ color: #F8921B;
 }
 #line-vertical{
   border-left: 1px solid#34C270;
-  height: 200px;
+  height: 225px;
 }
 
 
 
 
-                                             /* Goblin Section */
-
-
-
-.imp{
-
-}
-.imp img{
-  padding-left: 20px;
+ /* Goblin Section */
+.respo-circ{
+  bottom: 425px;
+  position: relative;
+  z-index: -1;
 }
 .imp-text{
   padding-left: 15px;
@@ -207,10 +203,11 @@ color: #F8921B;
   font-family: 'Montserrat Alternates',sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 135%;
   letter-spacing: 0.01em;
   color: #2A2B2C;
+  margin-bottom: 28px;
   }
   .imp-text p{
   font-family: "Segoe UI";
@@ -220,6 +217,23 @@ color: #F8921B;
   line-height: 20px;
   letter-spacing: 0.01em;
   color: #34C270;
+  padding-right: 110px;
+  padding-bottom: 25px;
+  }
+  .imp-text span{
+    color:#F93D31;
+  }
+  .imp-text a{
+    background: #F8921B;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    border-radius: 2px;
+    padding: 10px 100px;
   }
   .imp-man{
     padding-top: 25px;
@@ -234,40 +248,177 @@ color: #F8921B;
   }
   .circ-bck-line img{
     width: 100%;
+    height: max-content;
   }
-  @media screen and (min-width: 992px){
-    .ellipse{
-      width:14%;
+  @media screen and (min-width: 1200px){
+   .ellipse{
+   width:12%;
     }
+    #seven-circles{
+      margin-bottom: 76px;  
+      margin-top: 60px;
+     }
+     #seven-circles .container:last-child{
+       height: 0;
+     }
+     .imp .imp-text p{
+      padding-right: 16px;
+     }
+    }
+  @media screen and (max-width:1200px){
+   #seven-circles .circles{
+   width: 115px;
+   height: 115px;
   }
-
+  .imp{
+    margin-left: -20px;
+  }
+   } 
+   @media screen and (max-width: 992px) and (min-width: 768px){
+    #seven-circles {
+      margin-bottom: 76px;
+     }
+    #seven-circles .ellipse {
+       width: 20%;
+       padding: 25px 0px;
+   }
+   #seven-circles .circ-service{
+     justify-content: unset;
+    flex-wrap: wrap-reverse;
+    margin-top: 120px;
+   }
+   #seven-circles .respo-circ{
+    bottom: 520px;
+   }
+   #seven-circles .container:last-child{
+     height: 0;
+   }
+   #seven-circles .imp-text p{
+    padding-bottom: 5px;
+   }
+   }   
+   @media screen and (max-width: 768px){
+    #seven-circles{
+      margin-bottom:-150px;
+    }
+    #seven-circles .ellipse{
+      width: 32%;
+      padding: 25px 0;
+       }
+    #seven-circles .circles{
+        width: 130px;
+        height: 130px;
+       }
+       #seven-circles .respo-circ{
+         bottom:210px;
+       }
+       #line-vertical{
+         display: none;
+       }
+   }
+   @media screen and (max-width: 576px){
+     #seven-circles{
+      margin-bottom: 100px;
+     }
+    #seven-circles .ellipse{
+      width: 35%;
+      margin: 0;
+       }
+      #seven-circles .circ-service{
+        justify-content: space-around;
+        text-align: center;
+      }
+     .imp-text{
+       margin-top: 40px;
+     }
+     .imp-text p{
+      padding-right: 0;
+     }
+   }
   .circles{
-    width: 125px;
-    height: 125px;
+    width: 130px;
+    height: 130px;
     background: #FFFFFF;
     border: 2px solid #34C270;
     box-sizing: border-box;
     border-radius: 50%;
-    margin-right: 25px;
-  }
-
-  .circ-service{
     position: relative;
-    bottom: 80px;
-    padding-left: 35px;
+    display: table;
   }
-
-                                                                      /* Services */
-  #services{
-    /* position: relative;
-    top: 100px; */
-  }
-  .card{
-    /* margin-top: 25px;
-    position: relative;
+  .circles:hover{
     background: #34C270;
-    height: 250px;
-    border-radius: 0%; */
+  }
+  .circles:hover p{
+    color: #FFFFFF;
+  }
+  .circles>span{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 40%;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: -15px;
+    text-align: center;
+  }
+  .circles span>h6{
+    color: #F8921B;
+  }
+  .circles>p{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #2F4450;
+    display: table-cell; 
+    vertical-align: middle;
+    padding: 0 5px;
+   }
+  .circ-service{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Services */
+   .heading{
+     position: relative;
+   }
+   .heading h1{
+    font-family:"Montserrat Alternates";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2A2B2C;
+    margin-bottom: 50px;
+   }
+   .heading .right{
+     width: 60px;
+     height: 2px;
+     background: #34C270;
+     position: absolute;
+     margin: 15px 10px;
+   }
+   .heading .left{
+    width: 60px;
+    height: 2px;
+    background: #34C270;
+    position: absolute;
+    margin: 15px 15px 0 -70px;
+   }
+  .card{
+    margin-bottom: 75px;
+    background: #34C270;
+    height: auto;
+    border-radius: 0%;
+  }
+  @media(max-width:768px){
+    .card{
+      margin-bottom: 48px;
+    }
   }
   .card img:first-child{
     mix-blend-mode: multiply;
@@ -279,37 +430,62 @@ color: #F8921B;
     width: 100%;
     bottom: 0;
   }
-  .card .inform{
+  .card .destination{
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 10%;
     text-align: center;
-    margin-right: 50px;
+    width: 100%;
+    padding: 0 28px;
   }
-  .card .inform h6{
-    font-family: Segoe UI;
-    font-size: 15px;
-    line-height: 22px;
-    text-align: center;
+  .card .destination h6{
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: default;
   }
-
-
-
-  /* Other Services */
-  #serv-analysis{
-   margin-top:5rem;
+  .card:hover{
+    opacity: 0.8;
+    transition-duration: 1s;
+  
   }
+  .card:hover .arrow-icon, .card:hover .overlay-border{
+    opacity: 1;
+    transition-duration: 1.5s;
+  }
+  .overlay-border{
+    outline: 1px solid #FFFFFF;
+    outline-offset: -11px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+  }
+   .arrow-icon{
+   position: absolute;
+   top:45%;
+   text-align: center;
+   width: 100%;
+   padding: 10px 28px;
+   z-index: 3;
+   opacity: 0;
+}
+  .card .arrow-icon img{
+  width: 30px;
+   }
   .other-services{
     border: 2px solid #34C270;
     box-sizing: border-box;
   }
   .other-services .name-sec{
-  
+    padding: 20px 0 19px 0;
   }
-   .name-sec h5{
+  .docs-analys .name-sec{
+    padding: 22px 0 20px 0;
+  }
+  .name-sec h5{
    font-family: "Segoe UI",sans-serif;
    font-size: 16px;
    text-align: center;
@@ -326,9 +502,11 @@ color: #F8921B;
   }
   .other-services ul{
     margin-bottom: 0;
+    padding-left: 20px;
   }
   .other-services ul>li{
    color: #34C270;
+   line-height: 28px;
   }
   .other-services ul>li:hover{
     color: #F8921B;
@@ -347,15 +525,29 @@ color: #F8921B;
   }
   .design-below{
     background: #34C270;
+    margin-top: 23px;
   }
   .design-below img{
     width: 100%;
     mix-blend-mode: multiply;
     height: max-content;
   }
+  @media screen and (max-width: 992px){
+  .docs-analys{
+    margin-top: 43px;
+  }
+  }
+  .docs-analys{
+    background: #34C270;
+    height: 100%;
+  }
+  .docs-analys ul{
+    padding-left: 20px;
+  }
   .docs-analys ul>li{
     letter-spacing: 0.01em;
     color: #FFFFFF;
+    line-height: 28px;
   }
    .docs-analys ul>li>span:hover{
     border-bottom: 1.5px dashed #FFFFFF;
@@ -371,26 +563,54 @@ color: #F8921B;
     display: inline-block;
     line-height: 1.5;
    }
-   .docs-analys{
-     background: #34C270;
-   }
 
    /* Consultation section */
-
-   .conslt-image{
-    padding:0 15px;
+   #consultation{
+    margin-top: 33px;
    }
-   .conslt-image img{
+   #consultation .heading{
+     top:60px;
+     right: 30px;
+   }
+  .conslt-img{
+    background: #F8921B;
+    mix-blend-mode: normal;
+    margin-top: 40px;
+   }
+   .conslt-img div{
+     position: absolute;
+     left: -50px;
+     top: 75px;
+   }
+   .conslt-img p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+   }
+   .conslt-img a{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #F8921B;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+   }
+   .conslt-img img{
      width: 100%;
+     mix-blend-mode: multiply;
+     height: max-content;
   }
   .pass-img{
     position: absolute;
     z-index:-1;
-  }
+    }
   .doc-img{
     position: absolute;
     z-index: 1;
   }
+ 
   /* Benefits */
 
 
@@ -426,7 +646,3 @@ letter-spacing: 0.02em;
 color: #2A2B2C;
 }
 
-/* Order now */
-.order-now{
-  background-image: url(../images/photos/search-container.jpg);
-}
