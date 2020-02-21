@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="main-bar" class="mb-1">
         <div class="container">
             <div class="row">
                 <div class="col-sm-10">
@@ -49,13 +49,14 @@
                         </div>
                         <div id="line"></div>
                         <div class="row mt-3">
-                            <div class="col-2">
-                                <div class="main-logo d-flex align-items-center">
-                                    <div id="rectangle"></div>
+                            <div class="col-xl-3 col-lg-2 text-lg-center">
+                                <div class="main-logo d-xl-flex align-items-xl-center">
+                                    <div class="rectangle"></div>
                                     <h1 class="pl-2 mb-0">ПрофМед</h1>
                                 </div>
                             </div>
-                            <div class="col-10">
+                            
+                            <div class="col-xl-9 col-lg-10 ">
                                 <div class="navbar navbar-expand-lg justify-content-end  ">
                                     <ul class="navbar-nav">
                                         <li><a href="">О нас</a></li>
@@ -74,35 +75,70 @@
                     </div>
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-sm-2 pl-0 pr-0">
                     <div class="appointment-num">
-                        <div><span>+7 978</span>71 000 38<div>
-                                <hr class="dashed-line">
+                        <h4>+7 978 <span>71 000 38</span></h4>
                                 <p><b>Записаться онлайн</b></p>
                             </div>
                         </div>
                     </div>
                 </div>
     </nav>
+    <nav id="responsive-bar">
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-4">
+            <div class="main-logo d-md-flex align-items-md-center">
+                    <div class="rectangle"></div>
+                    <h1 class="pl-md-2 mb-0">ПрофМед</h1>
+        </div>
+    </div>
+        <div class="col-6 pl-0 pr-0">
+                <div class="info-box d-flex align-items-center">
+                    <div class="adress-icon">
+                            <img src="images/icon/respo-icon.png" alt="">
+                    </div>
+                    <p>г. Симферополь, ул.
+                            Севастопольская, 99б</p>
+                    </div>
+                    <div class="phone-numb">
+                        <h5>+7 978 71 000 38</h5>
+                    </div>
+        </div>
+        <div class="col-2 pr-0">
+            <div class="side-icon">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    </nav>
     <section id="order-part">
-        <div class="order-table">
-            <img src="images/pic/table.png" alt="">
-        </div>
-        <div class="img-circle">
-            <img src="images/pic/bg-circle.png" alt="">
-            <img src="images/pic/lt-circle.png" alt="">
-            <img class="vis-circ" src="images/pic/ordering-circle.png" alt="">
-            <img class="vis-circ" src="images/pic/circle-green.png" alt="">
-            <img src="images/pic/identity.png" alt="">
-        </div>
-        <div class="txt-table">
-            <h2>Медицинские <br> справки с доставкой</h2>
-            <h1>от 300 ₽</h>
-        </div>
+        <div class="order-table d-lg-flex"> 
+                            <div class="txt-table">
+                                  <div class="inform-txt">
+                                        <h2>Медицинские <br> справки с доставкой</h2>
+                                    <h1>от 300 ₽</h1>
+                                                <a href="#">Заказать сейчас</a>
+                                        </div>
+                                </div>
 
-
+                                <div class="right-side-img d-none d-lg-block">
+                                        <div class="mid-img">
+                                                <img src="images/pic/ident.png" alt="">
+                                        
+                                        </div>
+                                    <div class="bg-circle">
+                                        <div class="md-circle">
+                                            <img src="images/pic/ordering-circle.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
     </section>
-    <section id="seven-circles">
+ <section id="seven-circles">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-3 offset-md-0 col-sm-12 col-6 offset-3">
@@ -370,190 +406,368 @@
             </div>
         </div>
     </section>
-
     <section id="consultation">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-                            <div class="doc-img">
-                                <img src="images/pic/doc.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-3 px-0">
-                            <div class="heading">
-                                <h1>Остерегайтесь подделок!</h1>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="pass-img">
-                                <img src="images/pic/med.png" alt="">
-                            </div>
-                        </div>
+                <div class="col-md-12 offset-md-0 col-sm-10 offset-sm-1 ">
+                    <div class="heading text-lg-center">
+                        <h1>Остерегайтесь подделок!</h1>
                     </div>
-                </div>
-                <div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2 ">
                     <div class="conslt-img">
                         <img src="images/pic/bg-line.jpg" alt="">
-                        <div class="col-sm-4 offset-sm-4 px-0">
-                            <p>Подделка медкнижек и медсправок уголовно наказуема. Мы предлагаем только подлинные документы
-                                без переплат посреднкиам.</p>
-                        </div>
-                        <div class="col-sm-4 offset-sm-8">
-                            <a href="">Заказать консультацию</a>
+                        <div class="row conslt-position">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="doc-img">
+                                    <img src="images/pic/doc.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 offset-lg-0 col-md-5 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1">
+                                <p>Подделка медкнижек и медсправок уголовно наказуема. Мы предлагаем только подлинные
+                                    документы
+                                    без переплат посреднкиам.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 text-sm-center d-flex justify-content-center flex-md-row">
+                                <div class="pass-img">
+                                    <img src="images/pic/med.png" alt="">
+                                </div>
+                                <div class="btn-order align-self-md-center">
+                                    <a href="#">Заказать консультацию</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         </div>
     </section>
-    <!-- <section>
+    <section class="mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="benefit-content">
-                        <div class="content-icon">
-                            <img src="images/icon/formal.png" alt="">
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-3 col-sm-10">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5 col-4">
+                            <div class="content-icon">
+                                <img src="images/icon/formal.png" alt="">
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5>ОФИЦИАЛЬНО</h5>
-                            <small>Оформим справку законно</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="benefit-content">
-                        <div class="content-icon">
-                            <img src="images/icon/formal.png" alt="">
-                        </div>
-                        <div class="content">
-                            <h5>ОФИЦИАЛЬНО</h5>
-                            <small>Оформим справку законно</small>
+                        <div class="col-xl-8 col-lg-7 col-md-8 col-6 pr-0">
+                            <div class="content">
+                                <h5>ОФИЦИАЛЬНО</h5>
+                                <p>Оформим справку законно</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm">
-                    <div class="benefit-content">
-                        <div class="content-icon">
-                            <img src="images/icon/place.png" alt="">
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-3 col-sm-10">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5 col-4">
+                            <div class="content-icon">
+                                <img src="images/icon/place.png" alt="">
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5>ОФИЦИАЛЬНО</h5>
-                            <small>Оформим справку законно</small>
+                        <div class="col-xl-8 col-lg-7 col-md-8 col-6 pr-0">
+                            <div class="content">
+                                <h5>офис в центре</h5>
+                                <p>Удобное расположение и отсутствие очередей</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="benefit-content">
-                        <div class="content-icon">
-                            <img src="images/icon/letter.png" alt="">
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-3 col-sm-10">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5 col-4">
+                            <div class="content-icon">
+                                <img src="images/icon/letter.png" alt="">
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5>ОФИЦИАЛЬНО</h5>
-                            <small>Оформим справку законно</small>
+                        <div class="col-xl-8 col-lg-7 col-md-8 col-6 pr-0">
+                            <div class="content">
+                                <h5>Доставка до двери</h5>
+                                <p>оформление не выходя из дома</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-3 col-sm-10">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5 col-4">
+                            <div class="content-icon">
+                                <img src="images/icon/percent.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7 col-md-8 col-6 pr-0">
+                            <div class="content">
+                                <h5>СИСТЕМА СКИДОК</h5>
+                                <p>Приятные скидки для постоянных клиентов</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- <section>
-        <div class="container clearfix">
-<div class="row">
-        <div class="med-center">
-   <div id="rect-grn">
-        
-   </div>
-   <img src="images/photos/med-center.jpg" alt="">              
-            </div>
-             <div class="about-med-center">
-                <div class="heading"><h1>Медицинский центр ООО «ПрофМед»</h1></div>
-                <p>Необходимость представить справку о состоянии здоровья обычно оборачивается серьезными потерями
-                    времени. Многочасовые очереди в поликлинике – это первое неудобство, с которым приходится
-                    столкнуться. Время приема врачей, которых нужно «пройти», часто не совпадает, а результатов
-                    анализов приходится ждать долго. Таким образом, получение обычной справки зачастую растягивается на
-                    несколько дней.</p>
-                <p>Отличным способом избежать лишней траты времени и получить действительную справку будет обращение
-                    медицинский центр «ПрофМед». Здесь вы сможете сдать все анализы и пройти осмотры у врачей. И для
-                    этого вам не понадобится тратить много времени. Вас ждут и готовы помочь в получении медицинской
-                    справки и результатов всевозможных анализов в кратчайшие строки.</p>
-            <p>
-                    У нас вы можете оформить: <br>
-                    медицинскую справку в ГИБДД; <br>
-                    справку для выдачи оружия; <br>
-                    справки для частных охранников, в т.ч. с правом ношения оружия;<br>
-                    медицинские книжки, периодические и углубленные медосмотры; 
-            </p>
-            </div>
-                    <div class="card" style="width: 18rem;">
+    </section>
+    <section class="mt-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 about-sec overflow-auto">
+                    <div class="about-med-center">
+                        <div class="med-center">
+                            <div id="rect-grn"></div>
+                            <img src="images/photos/med-center.jpg" alt="">
+                        </div>
+                        <div class="heading pt-lg-0 pt-md-3">
+                            <h1>Медицинский центр <br> ООО «ПрофМед»</h1>
+                            <span class="right"></span>
+                        </div>
+                        <p> Необходимость представить справку о состоянии здоровья обычно оборачивается серьезными
+                            потерями
+                            времени. Многочасовые очереди в поликлинике – это первое неудобство, с которым приходится
+                            столкнуться. Время приема врачей, которых нужно «пройти», часто не совпадает, а результатов
+                            анализов приходится ждать долго. Таким образом, получение обычной справки зачастую
+                            растягивается на
+                            несколько дней.</p>
+                        <div class="card-discount ml-sm-4">
+                            <h5>Запишитесь на прием сейчас и получи скидку 10%</h5>
                             <img src="images/photos/discount.jpg" class="card-img-top">
-                         <form>
-                                <div class="form-row">
-                                        <div class="col-12 mb-3">
-                                          <input type="text" class="form-control" placeholder="Имя" required>
-                                        </div>
-                                        <div class="col-12 mb-3">
-                                          <input type="text" class="form-control" placeholder="Телефон" required>
-                                        </div>
-                         </form>
-                            <div class="card-body">
-                                    <a href="#" class="btn btn-primary">Отправить</a>
-                            </div>
-                          </div>  
-</div>
-            
+                            <form>
+                                <div id="form-body">
+                                    <input type="text" placeholder="Имя" required>
+                                    <input type="text" placeholder="Телефон" required>
+                                    <a href="#" class="btn-send btn-block">Отправить</a>
+                                    <div class="d-flex align-items-center"> <input type="checkbox" class="mr-1" id="agreement">
+                                        <label for="agreement">
+                                         Согласен с <span>политикой конфиденциальности</span>
+                                        </label></div>
+                            </form>
+                        </div>
+                    </div>
+                    <p>Отличным способом избежать лишней траты времени и получить действительную справку будет
+                        обращение
+                        медицинский центр «ПрофМед». Здесь вы сможете сдать все анализы и пройти осмотры у врачей. И
+                        для
+                        этого вам не понадобится тратить много времени. Вас ждут и готовы помочь в получении
+                        медицинской
+                        справки и результатов всевозможных анализов в кратчайшие строки.</p>
+                    <p class="mb-5">
+                        <b>У нас вы можете оформить:</b> <br>
+                        медицинскую справку в ГИБДД; <br>
+                        справку для выдачи оружия; <br>
+                        справки для частных охранников, в т.ч. с правом ношения оружия;<br>
+                        медицинские книжки, периодические и углубленные медосмотры;
+                    </p>
+                    <a class="btn-send all-services" href="">Все услуги</a>
+                    <p class="mt-5">Какая бы справка вам ни была нужна, обратившись к нам, вы можете быть абсолютно уверены, что ваш
+                        документ будет оформлен в строгом соответствии с нормами. Если вы привыкли бережно относиться к
+                        своему времени, обращайтесь к нам, и получение любой справки станет совершенно
+                        необременительной процедурой.</p>
+                </div>
+
+            </div>
 
         </div>
-    </section> -->
-    <!-- <section>
+       
+    </section>
+    <section class="mt-5">
        <div class="container">
            <div class="row">
-               <div class="col-sm-12">
+               <div class="col-lg-12 col-md-10 col-sm-12">
                    <div class="order-now">
-                       <h1>Мы поможем сэкономьте свое время</h1>
-                       <div class="explanation"><p> Закажите справку с доставкой до дома и получите скидку 100 рублей </p></div>
-                      <div> <a href="">Заказать сейчас</a></div>
+                       <img src="images/photos/search-container.jpg" alt="">
+                       <div class="container inform-text">
+                             <div class="row">
+                                 <div class="col-sm-12 mt-lg-4">
+                                        <h2>Мы поможем сэкономьте свое время</h2>
+                                 </div>
+                                    <div class="col-xl-4 col-lg-5 col-md-10 col-12">  <p> Закажите справку с доставкой до дома и получите скидку 100 рублей </p></div>
+                                    <div class="col-lg-4 col-md-8 align-self-center col-12">  <a href="">Заказать сейчас</a></div>
+                             </div>
+                              
+                           </div>
+                 
                    </div>
                </div>
            </div>
        </div>
    </section>
-   <section>
+   <section class="mt-5">
        <div class="container">
            <div class="row">
-               <div class="col-lg-5 col-sm-12">
-                   <div class="heading"></div>
-                   <div class="adress"></div>
-                   <div class="phone"></div>
-               </div>
-               <div class="col-lg-7 col-sm-12">
-                   <div class="heading"></div>
-                   <div class="row">
-                       <div class="col-lg-6">
-                              <div class="station"></div>
-                              <div class="bus-num"></div>
+               <div class="col-lg-4 col-md-5 col-sm-12">
+                   <div class="heading">
+                       <h1>Контакты</h1>
+                   </div>
+                   <div class="adress d-flex">
+                       <div class="icon-for align-self-center">
+                           <img src="images/icon/white-adress.png" alt="">
                        </div>
-                       <div class="col-lg-6">
-                           <div class="station"></div>
-                           <div class="bus-num"></div>
+                      <div class="inform-adress">
+                            <p class="mb-0">г. Симферополь,</p>
+                            <p>Севастопольская, 58б </p>
+                            <p>Пн-Пт: <b>9:00-19:00</b>; Сб-Вс: <b>выходной</b></p>
+                      </div>
+                   </div>
+                   <div class="phone d-flex">
+                    <div class="icon-for align-self-center">
+                        <img src="images/icon/white-phone.png" alt="">
+                    </div>
+                       <div class="inform-phone">
+                           <p>+7 978 105 51 01</p>
+                           <p>mail@yandex.ru</p>
                        </div>
                    </div>
                </div>
-               <div class="col-lg-5">
-                   <div class="contact"></div>
+               <div class="col-xl-7 col-lg-8 offset-xl-1 col-md-7 col-sm-12">
+                   <div class="heading">
+                       <h1>Как проехать</h1>
+                   </div>
+                   <div class="row">
+                       <div class="col-lg-6">
+                              <div class="station d-flex">
+                                    <div class="bus-icon">
+                                            <img src="images/icon/bus-icon.png" alt="">
+                                      </div>
+                                  <div class="bus-adress">
+                                      <h6>Остановка «площадь Ленина»</h6>
+                                      <small><i class="fas fa-long-arrow-alt-left"></i>просп. Кирова</small>
+                                    <br>
+                                    <small><i class="fas fa-long-arrow-alt-right"></i>Сергеева-Ценского, 4А</small>
+                                    </div>
+                              </div>
+                              <div class="bus-num">
+                                  <h6>Автобус</h6>
+                                  <ul class="bus">
+                                      <li>3</li>
+                                      <li>6</li>
+                                      <li>7</li>
+                                      <li>126</li>
+                                      <li>22</li>
+                                      <li>30</li>
+                                      <li>55</li>
+                                      <li>98</li>
+                                  </ul>
+                                  <h6>Маршрутки</h6>
+                                  <ul class="minibus">
+                                      <li>1</li>
+                                      <li>2</li>
+                                      <li>10</li>
+                                      <li>15</li>
+                                      <li>25</li>
+                                      <li>41</li>
+                                      <li>48</li>
+                                      <li>85</li>
+                                      <li>112</li>
+                                  </ul>
+                                  <h6>Троллейбусы</h6>
+                                  <ul class="trollbus">
+                                      <li>4</li>
+                                      <li>5</li>
+                                      <li>7</li>
+                                      <li>9</li>
+                                      <li>10</li>
+                                      <li>11</li>
+                                      <li>15</li>
+                                  </ul>
+                              </div>
+                       </div>
+                       <div class="col-lg-6">
+                           <div class="station d-flex">
+                               <div class="bus-icon">
+                                    <img src="images/icon/bus-icon.png" alt="">
+                               </div>
+                                <div class="bus-adress">
+                                    <h6>Остановка Октябрьская улица</h6>
+                                <small><i class="fas fa-long-arrow-alt-left"></i>ул. Курчатова, 1</small>
+                                <br>
+                                 <small> <i class="fas fa-long-arrow-alt-right"></i>Пролетарская, 5</small>
+                                </div>
+                           </div>
+                           <div class="bus-num">
+                               <h6>Маршрутки</h6>
+                               <ul class="minibus">
+                                   <li>1</li>
+                                   <li>2</li>
+                                   <li>10</li>
+                                   <li>15</li>
+                                   <li>25</li>
+                                   <li>41</li>
+                                   <li>48</li>
+                                   <li>85</li>
+                                   <li>112</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-lg-7">
-                <div class="map"></div>
+               <div class="col-lg-4 col-md-5 col-sm-12">
+                   <div class="contact">
+                       <h6>Остались вопросы?</h6>
+                       <small>Задайте их нашему менеджеру</small>
+                       <form class="mt-3" >
+                                <input type="text" placeholder="Телефон">
+                                <textarea name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                                <a class="btn-send btn-block" href="#">Отправить</a>
+                               <div class="d-flex align-items-center"> <input type="checkbox" class="mr-1" id="agreement">
+                                <label for="agreement">
+                                 Согласен с <span>политикой конфиденциальности</span>
+                                </label></div>
+                        </form>
+                      
+                   </div>
+               </div>
+               <div class="col-xl-7 col-lg-8 offset-xl-1 col-md-7 col-sm-12">
+                <div class="map mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.8132130150702!2d34.083973971599505!3d44.92713390469829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eade9d37f78663%3A0xc8572fe0d108dde8!2sUlitsa%20Sevastopolskaya%2C%20Simferopol&#39;!5e0!3m2!1sen!2sge!4v1582133497764!5m2!1sen!2sge"
+                         width="100%" height="345" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
                </div>
            </div>
        </div>
-   </section> -->
+   </section>
+   <div id="footer-band"></div>
     <footer id="footer-area">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-5 mt-sm-4 col-sm-12 text-md-unset text-center">
+            <div class="footer-logo">
+                <img src="images/pic/logo.png" alt="">
+            </div>
+            <p>Медицинский центр. <br> Медицинские справки с доставкой.</p>
+        </div>
+        <div class="mt-lg-2 d-lg-flex justify-content-lg-between col-xl-3 col-lg-2 d-none d-lg-block">
+            <ul>
+                <li>О нас</li>
+                <li>Услуги</li>
+                <li>Цены</li>
+                <li>Вакансии</li>
+            </ul>
+            <ul>
+                    <li>Отзывы</li>
+                    <li>Лицензии</li>
+                    <li>Акции</li>
+                    <li>Контакты</li>
+                </ul>
+        </div>
+        <div class="col-xl-6 col-md-7 col-12 d-flex justify-content-center responsive-card">
+           <div class="steth d-none d-lg-block">
+                <img src="images/pic/stethoscope.png" alt="">
+           </div>
+<div class="card-order">
+    <h4>+7 978 <span>105 51 01</span></h4>
+    <div class="btn-order text-center mb-5">
+            <a  href="">Записаться онлайн</a>
+    </div>
+    <div class='wave'></div>
+</div>
 
-    </footer>
+<div class="home-phone d-md-none d-lg-block">
+        <img src="images/pic/home-phone.png" alt="">
+
+</div>
+        </div>
+    </div>
+</div>
+    </footer> 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

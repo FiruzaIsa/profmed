@@ -1,12 +1,61 @@
 $(document).ready(function(){
-  $(window).on("load",function(){
-    if($(window).width()<576){
-        $(".circ-bck-line").appendTo(".imp-man");
-        $(".ellipse:last-of-type").appendTo(".imp-man");
-        $(".imp-man .ellipse").css({"position": "absolute","top":"68%","left":"32%"});
-        $(".imp-man").css({"position":"relative"});
-        $(".respo-circ").removeClass();
-        }
-  });
-    
+  $(window).bind('load resize', function()
+  {
+    var win=$(window).width();
+    if(win<=576){
+      $(".circ-bck-line").appendTo(".imp-man");
+      $(".ellipse").last().appendTo(".imp-man");
+      $(".imp-man .ellipse").css({"position": "absolute","top":"68%","left":"32%"});
+      $(".imp-man").css({"position":"relative"});
+      $(".respo-circ").removeClass();
+    }
+    });
+
+    var i = 0;
+    $(function () {
+        $(window).on("resize", function () {
+            var windowsize = $(this).width();
+            if (windowsize < 576 && i === 0) {
+                i = 1;
+            } else if (windowsize >= 576 && i == 1) {
+                location.reload();
+                i = 0;
+            }
+        });
+    });
+
+$(window).bind('load resize',function(){
+if($(window).width()<768){
+ $(".conslt-img img").first().attr("src","images/pic/bg-line-position.png");
+ $(".footer-logo img").attr("src","images/pic/logo-sm.png");
+ $(".conslt-position .btn-order").addClass("mb-5");
+ $(".pass-img").attr("style","z-index:1");
+ $(".conslt-position .btn-order").attr("style","z-index:2")
+    }else if($(window).width()>768){
+      $(".about-med-center p:first").after($(".card-discount"));
+      $(".footer-logo img").attr("src","images/pic/logo.png");
+      $(".conslt-img img").first().attr("src","images/pic/bg-line.jpg");
+      $(".conslt-position .btn-order").removeClass("mb-5");
+      $(".pass-img").attr("style","z-index:-1");
+      $(".conslt-position .btn-order").attr("style","z-index:0");
+    }
+    if($(window).width()<768){
+  $(".about-sec").append($(".card-discount"));
+} else if($(window).width()>768){
+  $(".about-med-center p:first").after($(".card-discount"));
+} 
+if($(window).width()<1200){
+      $(".about-med-center .right").css("width","0")
+    }else{
+      $(".about-med-center .right").css("width","200px")
+    }
+    if($(window).width()<992){
+      $(".order-now img").attr("src","images/photos/search-container-2.jpg");;
+         }else{
+          $(".order-now img").attr("src","images/photos/search-container.jpg");
+         }
+    });
+
+
+
 });
