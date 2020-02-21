@@ -98,7 +98,7 @@ background: #2F4450;
 }
 @media screen and (min-width:1200px){
   .navbar .navbar-nav li{
-    margin-left: 24px;
+    margin-left: 22px;
   }
   .appointment-num h4{
    font-size: 18px;
