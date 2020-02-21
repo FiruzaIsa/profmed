@@ -55,7 +55,18 @@ if($(window).width()<1200){
           $(".order-now img").attr("src","images/photos/search-container.jpg");
          }
     });
-
-
-
 });
+var btn=document.getElementById("top-scroll");
+window.onscroll=function(){scrollFunc()};
+function scrollFunc(){
+  if(document.body.scrollTop>30||document.documentElement.scrollTop>30){
+    btn.style.display="block";
+  }else{
+    btn.style.display="none";
+  }
+}
+
+function topFunc() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
