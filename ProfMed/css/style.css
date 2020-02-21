@@ -2,6 +2,7 @@
 body{
   position: relative;
   background: #FFFFFF;
+  overflow-x: hidden;
 }
  a:hover{
     text-decoration: none;
