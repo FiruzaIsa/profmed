@@ -22,7 +22,9 @@ body{
       display: -ms-grid;
     }
   }
- 
+ nav{
+   margin-bottom: 1rem;
+ }
   nav ul{
     list-style-type: none;
   }
@@ -58,13 +60,11 @@ body{
     float: left;
     padding-left: 15px;
   }
- .main-logo .rectangle, h1{
-  display: inline-block;
- }
 .main-logo .rectangle{
 width: 50px;
 height: 50px;
 background: #2F4450;
+display: inline-block;
 }
 .main-logo h4{
   font-family: "Yaldevi Colombo";
@@ -178,6 +178,7 @@ nav button .icon-bar:last-of-type{
 @media screen and (max-width:992px){
   nav{
     background: linear-gradient(180deg, #34C270 0%, #2EAC63 100%), #34C270;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width:768px){
@@ -291,6 +292,7 @@ margin-top: 3rem;
   line-height: 52px;
   letter-spacing: 0.035em;
   color: #F8921B;
+  display: inline-block;
 }
 #line-vertical{
   border-left: 1px solid#34C270;
@@ -507,18 +509,20 @@ margin-top: 3rem;
     margin-bottom: 50px;
    }
    .heading .right{
-     width: 60px;
-     height: 2px;
-     background: #34C270;
-     position: absolute;
-     margin: 15px 10px;
+    width: 60px;
+    height: 2px;
+    background: #34C270;
+    position: absolute;
+    margin: 15px 0 0 -125px;
+    top: 0;
    }
    .heading .left{
     width: 60px;
     height: 2px;
     background: #34C270;
     position: absolute;
-    margin: 15px 15px 0 -70px;
+    margin: 15px 15px 0 60px;
+    top: 0;
    }
    #services .heading{
      margin-top:35px;
@@ -829,6 +833,7 @@ margin-bottom: 15px;
 .about-med-center .heading .right{
   top: 25px;
   width: 200px;
+  right: 0;
 } 
 .about-med-center p{
 font-size: 15px;
