@@ -10,7 +10,6 @@ $(document).ready(function(){
       $(".respo-circ").removeClass();
     }
     });
-
     var i = 0;
     $(function () {
         $(window).on("resize", function () {
@@ -65,7 +64,6 @@ function scrollFunc(){
     btn.style.display="none";
   }
 }
-
 function topFunc() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
