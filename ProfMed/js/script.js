@@ -54,6 +54,8 @@ if($(window).width()<1200){
           $(".order-now img").attr("src","images/photos/search-container.jpg");
          }
     });
+changeIcon();
+ 
 });
 var btn=document.getElementById("top-scroll");
 window.onscroll=function(){scrollFunc()};
@@ -68,3 +70,4 @@ function topFunc() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+

@@ -108,7 +108,7 @@ line-height: 88%;
 letter-spacing: 0.01em;
 color: #2A2B2C;
 }
-.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active{
+.navbar .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .active>.nav-link{
   color: #F8921B;
 }
 
@@ -180,6 +180,25 @@ nav button .icon-bar:last-of-type{
     background: linear-gradient(180deg, #34C270 0%, #2EAC63 100%), #34C270;
     margin-bottom: 0;
   }
+  .navbar .navbar-nav .nav-link{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 66px;
+  color: #FFFFFF;
+  }
+  .navbar .navbar-collapse ul{
+    align-items: start;
+    margin-left: 1rem;
+  }
+  .navbar .navbar-collapse .social-networks{
+    padding-inline-start: 0;
+    margin-top:45px; 
+  }
+  .navbar .navbar-collapse .social-networks>li{
+    display: inline-block;
+   margin-right: 45px;
+  }
+  
 }
 @media screen and (max-width:768px){
 .info-box ul>li:last-of-type{
@@ -204,8 +223,27 @@ nav .phone-numb h5{
   text-align: center;
   color: #FFFFFF;
  }
-
-
+.navbar-collapse .appointment-num{
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 30px 0;
+  margin: 4rem 0;
+}
+.navbar-collapse .appointment-num h4{
+font-size: 36px;
+color: #FFFFFF;
+border:unset;
+}
+.navbar-collapse .appointment-num p>b{
+  font-size: 24px;
+ line-height: 32px;
+ border-bottom: 2px dashed #F8921B;
+  }
+  .navbar-collapse .info-box li{
+    float: none;
+    color: #FFFFFF;
+    display: block !important;
+  } 
 
 /* second section */
 @media screen and (min-width:992px){
